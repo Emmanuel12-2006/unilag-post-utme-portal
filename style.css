@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(255, 235, 208);
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height:70px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap:50px;
+}
+
+header img{
+    width: 40px;
+}
+
+header h1{
+    font-size: 20px;
+    font-weight: 400;
+    color:rgb(255, 235, 208);
+
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+    gap:20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+
+}
+
+form h2{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+form .input-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:4px;
+}
+
+.input-group label{
+    font-size: 12px;
+    font-weight: 400;
+    color:brown;
+
+}
+
+.input-group input{
+    width: 100%;
+    padding: 10px 20px;
+    border:1px solid grey;
+    outline: none;
+    border-radius: 4px;
+}
+
+.input-group input:focus{
+    border-color: brown;
+}
+
+.input-group button{
+    width: 100%;
+    background-color: brown;
+    color:rgb(255, 235, 208);
+    font-size: 22px;
+    font-weight: 500;
+    border:none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+
+.input-group button:hover{
+    background-color: rgb(207, 62, 62);
+}
+
+
+footer{
+    height: 30px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+footer p{
+    color:brown;
+    font-size: 11px;
+}
+
+
+/* for mobile view */
+@media(max-width:450px){
+    form{
+        width: 90%;
+    }
+}
